@@ -37,6 +37,16 @@
 ]
 ```
 
+- Status 404:
+
+```js
+{
+  "message": 'The profile does not have active contracts',
+  "name": "NotContractsFound",
+  "status": 404
+}
+```
+
 
 
 ### GET `/api/contracts/7`
@@ -64,5 +74,15 @@
     "updatedAt": "2022-02-25T04:11:11.264Z",
     "ContractorId": 7,
     "ClientId": 4
+}
+```
+
+- Status 404:
+
+```js
+{
+  "name": 'ContractNotFound',
+  "message": 'Contract not found',
+  "status": 404
 }
 ```

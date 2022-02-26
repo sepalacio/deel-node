@@ -1,3 +1,3 @@
-# Contacts endpoints
+# Contracts endpoints
 
-### [Contacts](./docs/CONTRACTS.md)
+### [Contracts](./docs/CONTRACTS.md)
