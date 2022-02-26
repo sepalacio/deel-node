@@ -61,3 +61,37 @@
 }
 ```
 
+### POST `/api/jobs/:job_id/pay`
+
+> Pay for a job
+
+***Requires authentication header: profile_id=2***
+
+#### Response
+
+- Status 200:
+
+```js
+{}
+```
+
+- Status 404:
+
+```js
+{
+    "message": "There are not active jobs for this user",
+    "name": "NotActiveJobsFound",
+    "status": 404
+}
+```
+
+- Status 422:
+
+```js
+{
+    "message": "The client balance is insufficient to process the payment",
+    "name": "NoSufficientFunds",
+    "status": 422
+}
+```
+
