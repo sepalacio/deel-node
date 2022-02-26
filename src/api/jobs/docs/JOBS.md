@@ -72,7 +72,9 @@
 - Status 200:
 
 ```js
-{}
+{
+  message: `The Job with ID: 7, Billed Price: 202; was paid successfully`,
+}
 ```
 
 - Status 404:

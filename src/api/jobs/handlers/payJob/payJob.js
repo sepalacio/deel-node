@@ -37,7 +37,9 @@ const validateClientBalance = (profile, job) => (
     : throwCustomError(NoSufficientFundsError)
 );
 
-const sendResponse = (res) => res.status(200).json({});
+const sendResponse = (res, { id, price }) => res.status(200).json({
+  message: `The Job with ID: ${id}, Billed Price: ${price}; was paid successfully`,
+});
 
 /**
   * @param {object} req
@@ -61,7 +63,7 @@ const payJob = async (req, res, next) => {
       models,
     });
 
-    sendResponse(res);
+    sendResponse(res, job);
   } catch (error) {
     next(error);
   }
