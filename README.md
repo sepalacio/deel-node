@@ -37,6 +37,12 @@ Some unit tests were added to the module Contracts -> getContactById `contracts/
 $ npm run test
 ```
 
+# Start the server
+Navigate to the root directory and type into the console: 
+ ```properties
+$ npm start
+```
+
 # DEEL BACKEND TASK
 
 💫 Welcome! 🎉
