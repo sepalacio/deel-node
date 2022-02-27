@@ -121,4 +121,12 @@
 }
 ```
 
+```js
+{
+    "message": "An unexpected error occurred when processing the payment",
+    "name": "ErrorProcessingTransaction",
+    "status": 422
+}
+```
+
 

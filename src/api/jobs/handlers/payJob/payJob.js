@@ -1,7 +1,7 @@
 const { throwCustomError } = require('../../../../utils/errorTools');
 const jobsErrors = require('../../errors');
-const updateBalances = require('./updateBalances');
 const findJob = require('./findJob');
+const updateBalances = require('./updateBalances');
 
 const NoSufficientFundsError = jobsErrors('NoSufficientFunds');
 

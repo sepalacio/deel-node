@@ -4,8 +4,38 @@
 ### [Balances](src/api/balances/docs/BALANCES.md)
 ### [Contracts](src/api/contracts/docs/CONTRACTS.md)
 ### [Jobs](src/api/jobs/docs/JOBS.md)
-  
 
+# Handle Transactional Operations
+
+The only module that handles transactions is Jobs -> payJob `/jobs/:job_id/pay`; due to is the only one that performs more than one Update operation into the DataBase, if something went wrong then a Rollback is made to the Uncommitted operations.
+
+- Update the Client's balance.
+- Update the Contractor's balance.
+- Update the Job status.
+
+# Concurrency
+
+Every module in the API is loosely coupled, which means that every endpoint can be easily exported as a sole Microservice or even as a Lambda function, Both strategies stand for an easy scaling for every service in the case is needed.
+
+
+# Setup
+
+- Node v16.14.0 {LTS}
+- Npm v8.3.1
+
+# Before Start
+```properties
+$ npm install
+```
+
+# Unit Testing
+
+Some unit tests were added to the module Contracts -> getContactById `contracts/:id`; they can be run with:
+- 
+
+```properties
+$ npm run test
+```
 
 # DEEL BACKEND TASK
 
