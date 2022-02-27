@@ -55,6 +55,14 @@
 
 ```js
 {
+  "message": "Profile not found",
+  "name": "ProfileNotFound",
+  "status": 404
+}
+```
+
+```js
+{
     "message": "There are not active jobs for this user",
     "name": "NotActiveJobsFound",
     "status": 404
@@ -81,6 +89,14 @@
 
 ```js
 {
+  "message": "Profile not found",
+  "name": "ProfileNotFound",
+  "status": 404
+}
+```
+
+```js
+{
     "message": "There are not active jobs for this user",
     "name": "NotActiveJobsFound",
     "status": 404
@@ -96,4 +112,13 @@
     "status": 422
 }
 ```
+
+```js
+{
+    "message": "The job with provided id was previously paid",
+    "name": "JobAlreadyPaid",
+    "status": 422
+}
+```
+
 

@@ -10,7 +10,7 @@ const exceedsAllowedAmount = (depositAmount, maximumAllowedAmount) => (
   depositAmount > maximumAllowedAmount
 );
 
-const geErrorMessage = ({ message }, maximumAllowedAmount) => `${message} $${maximumAllowedAmount}.`;
+const geErrorMessage = ({ message }, maximumAllowedAmount) => `${message} $${maximumAllowedAmount}`;
 
 /**
  * Checks if the Client is able to receive the funds to deposit
@@ -22,12 +22,10 @@ const validateDeposit = ({ totalJobsSum }, depositAmount) => {
   const maximumAllowedAmount = getMaximumAllowedAmount(totalJobsSum);
 
   if (exceedsAllowedAmount(depositAmount, maximumAllowedAmount)) {
-    InvalidDepositAmountError.message = geErrorMessage(
-      InvalidDepositAmountError,
-      maximumAllowedAmount,
-    );
-
-    throwCustomError(InvalidDepositAmountError);
+    throwCustomError({
+      ...InvalidDepositAmountError,
+      message: geErrorMessage(InvalidDepositAmountError, maximumAllowedAmount),
+    });
   }
 };
 

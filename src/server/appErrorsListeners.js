@@ -23,3 +23,7 @@ const setupLogExpressError = (errorLogger, eventName) => ({ req, error }) => err
 module.exports = {
   logExpressError: setupLogExpressError(logErrorEvent, appEmmiter.events.EXPRESS_ERROR),
 };
+
+module.exports.test = {
+  setupLogExpressError,
+};

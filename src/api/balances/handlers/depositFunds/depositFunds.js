@@ -28,6 +28,7 @@ const depositFunds = async (req, res, next) => {
     const models = getModels(req);
     const client = await getClient(req.params.userId, models);
     const { dataValues } = await getActiveJobsSum(client, models);
+
     validateDeposit(dataValues, req.body.depositAmount);
     await updateClientBalance(req, models);
 

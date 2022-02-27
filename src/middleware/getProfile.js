@@ -14,6 +14,10 @@ const checkIfProfileExists = (result) => (
   !result ? throwCustomError(ProfileNotFoundError) : result
 );
 
+/**
+  * @param {object} req
+  * @param {object} req.profile_id
+  */
 const getProfile = async (req, res, next) => {
   try {
     const ProfileModel = getProfileModel(req);

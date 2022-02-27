@@ -12,6 +12,11 @@ const errors = new Map([
     message: 'The job with provided id does not exist for this user',
     status: 404,
   }],
+  ['JobAlreadyPaid', {
+    name: 'JobAlreadyPaid',
+    message: 'The job with provided id was previously paid',
+    status: 422,
+  }],
   ['NoSufficientFunds', {
     name: 'NoSufficientFunds',
     message: 'The client balance is insufficient to process the payment',

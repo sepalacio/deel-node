@@ -41,6 +41,14 @@
 
 ```js
 {
+  "message": "Profile not found",
+  "name": "ProfileNotFound",
+  "status": 404
+}
+```
+
+```js
+{
   "message": 'The profile does not have active contracts',
   "name": "NotContractsFound",
   "status": 404
@@ -78,6 +86,14 @@
 ```
 
 - Status 404:
+
+```js
+{
+  "message": "Profile not found",
+  "name": "ProfileNotFound",
+  "status": 404
+}
+```
 
 ```js
 {

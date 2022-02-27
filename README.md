@@ -1,9 +1,18 @@
+# API DOCS
+
+### [Admin](src/api/admin/docs/ADMIN.md)
+### [Balances](src/api/balances/docs/BALANCES.md)
+### [Contracts](src/api/contracts/docs/CONTRACTS.md)
+### [Jobs](src/api/jobs/docs/JOBS.md)
+  
+
+
 # DEEL BACKEND TASK
 
 💫 Welcome! 🎉
 
 
-This backend exercise involves building a Node.js/Express.js app that will serve a REST API. We imagine you should spend around 3 hours at implement this feature.
+This backend exercise involves building a Node.js/Express.js app that will serve a REST API.
 
 ## Data Models
 
@@ -44,12 +53,6 @@ The exercise requires [Node.js](https://nodejs.org/en/) to be installed. We reco
 1. Then run `npm start` which should start both the server and the React client.
 
   
-
-❗️ **Make sure you commit all changes to the master branch!**
-
-  
-  
-
 ## Technical Notes
 
   
@@ -62,8 +65,7 @@ The exercise requires [Node.js](https://nodejs.org/en/) to be installed. We reco
 - The server is running on port 3001.
 
   
-## APIs To Implement 
-
+## Implemented APIs
   
 
 Below is a list of the required API's for the application.
@@ -80,7 +82,7 @@ Below is a list of the required API's for the application.
 
 5. ***POST*** `/balances/deposit/:userId` - Deposits money into the balance of a client, a client can't deposit more than 25% his total of jobs to pay. (at the deposit moment)
 
-6. ***GET*** `/admin/best-profession?start=<date>&end=<date>` - Returns the profession that earned the most money (sum of jobs paid) for any contactor that worked in the query time range.
+6. ***GET*** `/admin/best-profession?start=<date>&end=<date>` - Returns the profession that earned the most money (sum of jobs paid) for any contractor that worked in the query time range.
 
 7. ***GET*** `/admin/best-clients?start=<date>&end=<date>&limit=<integer>` - returns the clients the paid the most for jobs in the query time period. limit query parameter should be applied, default limit is 2.
 ```
@@ -102,21 +104,3 @@ Below is a list of the required API's for the application.
     }
 ]
 ```
-
-  
-
-## Going Above and Beyond the Requirements
-
-Given the time expectations of this exercise, we don't expect anyone to submit anything super fancy, but if you find yourself with extra time, any extra credit item(s) that showcase your unique strengths would be awesome! 🙌
-
-It would be great for example if you'd write some unit test / simple frontend demostrating calls to your fresh APIs.
-
-  
-
-## Submitting the Assignment
-
-When you have finished the assignment, create a github repository and send us the link.
-
-  
-
-Thank you and good luck! 🙏

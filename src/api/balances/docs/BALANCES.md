@@ -34,6 +34,14 @@
 
 ```js
 {
+  "message": "Profile not found",
+  "name": "ProfileNotFound",
+  "status": 404
+}
+```
+
+```js
+{
     "message": "There are not clients with the provided ID",
     "name": "ClientNotFound",
     "status": 404

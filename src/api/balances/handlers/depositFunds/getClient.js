@@ -4,7 +4,10 @@ const balanceErrors = require('../../errors');
 const ClientNotFoundError = balanceErrors('ClientNotFound');
 
 const findClient = (ClientId, { Profile }) => Profile.findOne({
-  where: { id: ClientId },
+  where: {
+    id: ClientId,
+    type: 'client',
+  },
 });
 
 const checkIfClientExists = (result) => (
@@ -12,7 +15,7 @@ const checkIfClientExists = (result) => (
 );
 
 /**
- * Checks if the Client is exists
+ * GET Client's data
   * @param {number} userId
   * @param {object} models
   * @returns {object} Client's Profile data
