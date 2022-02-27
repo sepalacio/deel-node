@@ -31,7 +31,7 @@ $ npm install
 # Unit Testing
 
 Some unit tests were added to the module Contracts -> getContactById `contracts/:id`; they can be run with:
-- 
+
 
 ```properties
 $ npm run test
